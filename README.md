@@ -5,20 +5,24 @@
 #### By _**Hannah Beinstein**_
 
 ## Description
+Currency Converter is a web app that will convert any whole, positive, number amount in USD to another currency (limited to those available through the exchangerateapi.com API). The user can input their currency amount and select the new currency that they would like to convert to, and the program will make an API call to retrieve the new currency information and print the results to the webpage. The user then has the option to input another currency and convert the amount again. 
 
 ## Setup/Installation Requirements
 
+API Instructions:
+1. Get a unique API key by creating a free account at https://www.exchangerate-api.com/. When creating your API key, sign up for the "free" account-- this should allow you to make up to 2000 API calls/month. 
+
+Setup/Installation Instructions:
 * Clone the project from its GitHub repository (https://github.com/HBeinstein/currencyExchange.git).
 * Open in your code editor of choice.
-* Drag index.html file into your browser or double click it to view site..
+* Run "npm install" in terminal to install all necessary project modules 
+* Create a .env file at the top level of your directory, and place your API key in the file using the formatting: "API_KEY = YOUR-API-KEY-HERE"
+* Run "npm build" and then "npm start" in your terminal to create a server and view project live.
 
 Software Requirements
 1. Internet browser
-2. A code editor like VSCode or Atom to view or edit the codebase.
-
-Open by downloading:
-1. Clone the project from its GitHub repository.
-2. Open in your code editor of choice or drag index.html file into your browser or double click to view site.
+2. A code editor like VSCode or Atom to view or edit the codebase
+3. A free exchangerateapi.com account and API key
 
 ## Specifications
 _The chart below shows all possible input behaviors and their expected outputs._
