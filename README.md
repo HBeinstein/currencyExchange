@@ -1,6 +1,6 @@
 # _Currency Converter_
 
-#### _A web app to help convert between currencies, 7/2/20_
+#### _A web app to convert between currencies, 7/2/20_
 
 #### By _**Hannah Beinstein**_
 
