@@ -3,6 +3,10 @@ import './styles.css';
 import {getCurrencyAmounts} from './services/currencies.js';
 
 $( document ).ready(function() {
-let currencies = getCurrencyAmounts();
-console.log(currencies.conversion_rates);
+  let currencies = getCurrencyAmounts();
+  
+  Promise.resolve(currencies) 
+  .then(function(resolvedCurrencies){
+    console.log(resolvedCurrencies)
+  })
 });
