@@ -8,7 +8,7 @@
 
 ## Setup/Installation Requirements
 
-* Clone the project from its GitHub repository ().
+* Clone the project from its GitHub repository (https://github.com/HBeinstein/currencyExchange.git).
 * Open in your code editor of choice.
 * Drag index.html file into your browser or double click it to view site..
 
@@ -25,13 +25,10 @@ _The chart below shows all possible input behaviors and their expected outputs._
 
 | Behavior       | Input         | Output  |
 | ------------- |:-------------:| -----:|
-| User enters their birthday and selects mercury | [10, 21, 1992], "mercury" | "You are 114.9 years old on Mercury and will live approx 216.9 more Mercury years!" | 
-| User enters their birthday and selects venus | [10, 21, 1992], "venus" | "You are 44.9 years old on Venus and will live approx 84.9 more Venus years!" | 
-| User enters their birthday and selects mars | [10, 21, 1992], "mars" | "You are 14.7 years old on Mars and will live approx 27.8 more Mercury years!" | 
-| User enters their birthday and selects jupiter | [10, 21, 1992], "jupiter" | "You are 2.3 years old on Jupiter and will live approx 4.4 more Mercury years!" | 
-| User enters their birthday and selects neptune | [10, 21, 1992], "neptune" | "You are .2 years old on Venus and will live approx .3 more Mercury years!" | 
-| User enters their birthday and selects uranus | [10, 21, 1992], "uranus" | "You are .3 years old on Mars and will live approx .7 more Mercury years!" | 
-| User enters their birthday and selects saturn | [10, 21, 1992], "saturn" | "You are .9 years old on Jupiter and will live approx 1.8 more Mercury years!" | 
+| User does not enter valid input for currency to convert to | null , $20 usd | "Please choose a currency to convert to!" | 
+| User enters valid input for currency to convert to but does not enter money amount | EUR , null | "Please enter a valid amount!" | 
+| User chooses currency to convert to from list and inputs valid number amount in USD | EUR, $20 usd | "17.81 euro" | 
+
 
 ## Known Bugs
 
