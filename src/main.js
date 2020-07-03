@@ -8,6 +8,8 @@ let currencies = getCurrencyAmounts();
   $('.user-input-form').submit(function() {
     event.preventDefault()
 
+    $('.money-type-amount').empty();
+
     let usdAmount = parseFloat($('.usd-input').val())
     let currencyAbbreviation = $('#new-currency-select').val();
 
