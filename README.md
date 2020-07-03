@@ -1,16 +1,14 @@
-# _Planet Age Calculator_
+# _Currency Converter_
 
-#### _A web app to determine your age on other planets, 6/26/20_
+#### _A web app to help convert between currencies, 7/2/20_
 
 #### By _**Hannah Beinstein**_
 
 ## Description
 
-Planet Age Calculator is a web app that helps users determine their age on other planets. A solar year on Earth lasts 365 days, but on other planets, the length of a year will vary. As a result, a person's age will also vary if a different planet, with solar years that are shorter or longer, is used to calculate their age. In this web app, a user can input their age and choose a planet, and the program will use objects and methods to return their new age on the specified planet.  
-
 ## Setup/Installation Requirements
 
-* Clone the project from its GitHub repository (https://github.com/HBeinstein/planetAgeCalculator).
+* Clone the project from its GitHub repository ().
 * Open in your code editor of choice.
 * Drag index.html file into your browser or double click it to view site..
 
