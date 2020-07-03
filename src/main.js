@@ -4,5 +4,5 @@ import {getCurrencyAmounts} from './services/currencies.js';
 
 $( document ).ready(function() {
 let currencies = getCurrencyAmounts();
-console.log(currencies);
+console.log(currencies.conversion_rates);
 });

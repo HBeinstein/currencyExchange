@@ -12,7 +12,7 @@
 // }
 
 export function getCurrencyAmounts() {
-  fetch(`https://v6.exchangerate-api.com/v6/e422c05b7dba28b28396ed36/latest/USD`)
+  fetch(`https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/latest/USD`)
   .then(function(response) {
     return response.json()
   })
