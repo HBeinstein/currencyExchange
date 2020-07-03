@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  font-family: helvetica, sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
+  background-color: #EBD1FE;
 }
 
 .main-container {
@@ -11,9 +12,16 @@ body {
 }
 
 .left-container {
-  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 1px solid red; */
+  padding-left: 4em;
 }
 
 .right-container {
-  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 1px solid green; */
 }

@@ -15,12 +15,18 @@ let currencies = getCurrencyAmounts();
 
     Promise.resolve(currencies) 
     .then(function(resolvedCurrencies){
+    console.log(resolvedCurrencies[currencyAbbreviation])
+
+      if(resolvedCurrencies[currencyAbbreviation] === undefined){
+        throw Error("sorry, information for this currency type isn't available")
+      } 
       const newCalcAmount = usdAmount / resolvedCurrencies[currencyAbbreviation];
       console.log(newCalcAmount)
+    })
+      .catch(function(error) {
+        return error
+      });
 
       $('.money-type-amount').append(`You have ${newCalcAmount} ${currencyAbbreviation}`);
     })
-    
-    
   });
-});
