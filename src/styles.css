@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  font-family: helvetica, sans-serif;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  height: 100vh;
+}
+
+.left-container {
+  border: 1px solid red;
+}
+
+.right-container {
+  border: 1px solid green;
+}
