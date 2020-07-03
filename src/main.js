@@ -1,7 +1,8 @@
 import $ from 'jquery'
 import './styles.css';
-// import {currencies} from './player.js';
+import {getCurrencyAmounts} from './services/currencies.js';
 
 $( document ).ready(function() {
-
+let currencies = getCurrencyAmounts();
+console.log(currencies);
 });
