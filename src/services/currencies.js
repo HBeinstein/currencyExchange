@@ -7,7 +7,7 @@ export function getCurrencyAmounts() {
     } return response.json()
   })
   .catch(function(error) {
-    console.log(error)
+    console.error(error)
   })
   .then(function(data){
     return data.conversion_rates;
