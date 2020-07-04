@@ -28,7 +28,7 @@ $(document).ready(function() {
       if(resolvedCurrencies[currencyAbbreviation] === undefined){
         throw Error("Sorry, information for this currency type isn't available, try another!")
       } else {
-      const newCalcAmount = usdAmount / resolvedCurrencies[currencyAbbreviation];
+      const newCalcAmount = (usdAmount / resolvedCurrencies[currencyAbbreviation]).toFixed(2);
       $('.money-type-amount').append(`You have ${newCalcAmount} ${currencyAbbreviation}`);
     }
     })
