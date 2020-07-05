@@ -20,23 +20,22 @@ $(document).ready(function() {
     $('.money-type-amount').empty();
 
     if(checkFormInputs($('.usd-input').val())) {
-      $('.money-type-amount').append(`Please fill both input fields with valid inputs!`)
+      $('.money-type-amount').append(`<span>Please fill both input fields with valid inputs!</span>`)
       return //exit function
     } 
     
     let currencies = getCurrencyAmounts();
-
     let usdAmount = parseFloat($('.usd-input').val())
     let currencyAbbreviation = $('#new-currency-select').val();
 
     Promise.resolve(currencies) 
     .then(function(resolvedCurrencies){
       if(resolvedCurrencies[currencyAbbreviation] === undefined){
-        throw new MyError("Sorry, information for this currency type isn't available, try another!")
+        throw new MyError("<span>Sorry, information for this currency type isn't available, try another!</span>")
       } else {
       const newCalcAmount = (usdAmount / resolvedCurrencies[currencyAbbreviation]).toFixed(2);
-      $('.money-type-amount').append(`You have ${newCalcAmount} ${currencyAbbreviation}`);
-    }
+      $('.money-type-amount').append(`You have: <br> <span>${newCalcAmount} ${currencyAbbreviation}</span>`);
+      }
     })
     .catch(function(error) {
       if (error instanceof MyError) {
