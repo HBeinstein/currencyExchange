@@ -1,8 +1,6 @@
 body {
   margin: 0;
   font-family: 'helvetica neue', sans-serif;
-  background-color: #222222;
-  color: #fefefe;
 }
 
 h1, h3, p {
@@ -23,6 +21,7 @@ h1 {
 h3 {
   font-size: 1.5em;
   font-weight: normal;
+  margin: 0;
 }
 
 p {
@@ -43,9 +42,45 @@ button, input[type="text"]:focus, input[type="text"], select {
   outline: none;
   box-shadow: none;
 }
+
+button {
+  border: 1px solid #222222;
+  border-radius: 2em;
+  width: 10em;
+  height: 3em;
+  margin: 2em 0em;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #222222;
+  color: #fefefe;
+}
+
+input {
+  margin: 1em 0;
+  border: 1px solid #222222 !important;
+  border-radius: 2em;
+  width: 15em;
+  height: 3em;
+  padding: 0em 1em;
+}
+
+input::placeholder {
+  padding: 1em;
+}
+
+select {
+  border: 1px solid #222222 !important;
+  background-color: #fefefe;
+  width: 15em;
+  height: 2.5em;
+}
+
 .main-container {
   display: grid;
-  grid-template-columns: 6fr 5fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   height: 100vh;
 }
@@ -56,6 +91,8 @@ button, input[type="text"]:focus, input[type="text"], select {
   justify-content: center;
   /* border: 1px solid red; */
   padding: 0em 8em;
+  background-color: #fefefe;
+  color: #222222;
 }
 
 .right-container {
@@ -64,5 +101,7 @@ button, input[type="text"]:focus, input[type="text"], select {
   justify-content: center;
   align-items: center;
   padding: 2em;
+  background-color: #222222;
+  color: #fefefe;
   /* border: 1px solid green; */
 }
