@@ -13,10 +13,10 @@ API Instructions:
 1. Get a unique API key by creating a free account at https://www.exchangerate-api.com/. When creating your API key, sign up for the "free" account-- this should allow you to make up to 2000 API calls/month. 
 
 Setup/Installation Instructions:
-* Clone the project from its GitHub repository (https://github.com/HBeinstein/currencyExchange.git).
+* Clone the project from its GitHub repository (https://github.com/HBeinstein/currencyExchange.git)
 * Open in your code editor of choice.
 * Run "npm install" in terminal to install all necessary project modules 
-* Create a .env file at the top level of your directory, and place your API key in the file using the formatting: "API_KEY = YOUR-API-KEY-HERE"
+* Create a .env file at the top level of your directory, and place your API key in the file using the formatting: "API_KEY = YOUR-API-KEY-HERE". **If you plan to track your project using Git, be sure to create a .gitignore file in the project directory and include ".env" to ensure your personal API key is not published online!**
 * Run "npm build" and then "npm start" in your terminal to create a server and view project live.
 
 Software Requirements
@@ -29,12 +29,9 @@ _The chart below shows all possible input behaviors and their expected outputs._
 
 | Behavior       | Input         | Output  |
 | ------------- |:-------------:| -----:|
-| ------------- |:-------------:| -----:|
+| User does not select option for one form field | null , $20 usd | "Please fill out both input fields with valid information!"| 
 | User selects value input for currency not supported by API | "Example not valid API currency" | "Sorry, information for this currency type isn't available, try another!" | 
-| User does not select valid input for currency to convert to | null , $20 usd | "Please choose a currency to convert to!" | 
-| User enters valid input for currency to convert to but does not enter money amount | EUR , null | "Please enter a valid amount!" | 
 | User chooses currency to convert to from list and inputs valid number amount in USD | EUR, $20 usd | "17.81 euro" | 
-
 
 ## Known Bugs
 
